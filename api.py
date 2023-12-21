@@ -27,7 +27,7 @@ def upload_file():
         cv2.imwrite('image.jpg', image)
         # Note: Uncomment for YOLO feature
         # image = yolo_detect.main(image)
-        nik, nama, tempat_lahir, tgl_lahir, jenis_kelamin, gol_darah, alamat, agama, status_perkawinan, pekerjaan, kewarganegaraan  = ocr.main(image)
+        nik, nama, tempat_lahir, tgl_lahir, jenis_kelamin, gol_darah, alamat, agama, status_perkawinan, pekerjaan, kewarganegaraan  = ocr.main()
 
         finish_time = time.time() - start_time
 
